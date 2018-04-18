@@ -1,8 +1,3 @@
----
-Goal1: 'Add this project to npm repository'
-Goal1-text: ''' Install by entering ```npm install node-pong``` into your terminal.
-'''
----
 # node-pong
 
 ## Summary
@@ -56,7 +51,7 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 
 ## Versions
 
-### v0
+### 1.0.0
 
 - It's the MVP for this package;
 - Simplest implementation ever;
