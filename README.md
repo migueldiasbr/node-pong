@@ -6,26 +6,51 @@ Everytime a developer wants to know if a site/API is up and running, generally a
 
 So I wanted to have a simple project that I'm able to quick use it for testing purposes.
 
-This is A simple project that provides API endpoints that answers to HTTP requests.
+**``This is A simple project that provides API endpoints that answers to HTTP requests.``**
 
-## Install & Run
+## Install
 
-Download this repository
-
-```terminal
-git clone https://github.com/migueldiasbr/node-pong.git
+```bash
+npm install node-pong
 ```
 
-Run the server
+## Use
 
-```node
-node node-pong.js
+Create a Node.js file and insert:
+```nodejs
+let nodePong = require('node-pong');
 ```
 
-Request a response from the server (default port)
+or type this on your terminal:
 
-```curl
+```bash
+echo "let nodePong = require('node-pong');">nodePongTest.js
+```
+
+## Run
+
+```bash
+node nodePongTest.js
+```
+
+and you whould see the server running:
+
+```bash
+server running on port 13420
+```
+
+## Check response
+
+Now you only have to check if the server is responding using any language/program you want. Example:
+
+```bash
 curl http://localhost:13420/ping
+```
+
+and you should see a response (drum roll)
+
+```bash
+pong
 ```
 
 ## Project Name
