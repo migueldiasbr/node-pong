@@ -11,7 +11,7 @@ Everytime a developer wants to know if a site/API is up and running, generally a
 
 So I wanted to have a simple project that I'm able to quick use it for testing purposes.
 
-This is a simple project that provides API endpoints that answers to HTTP requests.
+This is A simple project that provides API endpoints that answers to HTTP requests.
 
 ## Install & Run
 
@@ -23,8 +23,14 @@ git clone https://github.com/migueldiasbr/node-pong.git
 
 Run the server
 
-```terminal
+```node
 node node-pong.js
+```
+
+Request a response from the server (default port)
+
+```curl
+curl http://localhost:13420/ping
 ```
 
 ## Project Name
@@ -41,3 +47,20 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 - OPTIONAL: respond to ping requests on several ports;
 - OPTIONAL: respond with a customized answer on the default port;
 - OPTIONAL: respond with a customized answer on several different ports;
+
+## TODO
+
+- Implement every OPTIONAL goal described above;
+- Create tests using Mocha or another framework;
+- Implement a continuous delivery process;
+
+## Versions
+
+### v0
+
+- It's the MVP for this package;
+- Simplest implementation ever;
+- no dependencies;
+- no logs;
+- no tests;
+- no parameters for start listening on a different port;
