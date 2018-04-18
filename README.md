@@ -1,12 +1,31 @@
+---
+Goal1: 'Add this project to npm repository'
+Goal1-text: ''' Install by entering ```npm install node-pong``` into your terminal.
+'''
+---
 # node-pong
 
 ## Summary
 
-Everytime a developer wants to know it a site/api is up and runnig, generally a PING is made on a IP and PORT. Sometimes I want to check if my service is up on a determined PORT, or even if my request is going throught the firewall/router/switch the way I expect.
+Everytime a developer wants to know if a site/API is up and running, generally a PING is made on a IP and PORT. Sometimes I want to check if my service is up on a determined PORT, or even if my request is going through the firewall/router/switch the way I expect.
 
 So I wanted to have a simple project that I'm able to quick use it for testing purposes.
 
-This is a simple project that provides endpoints that answers to HTTP requests.
+This is a simple project that provides API endpoints that answers to HTTP requests.
+
+## Install & Run
+
+Download this repository
+
+```terminal
+git clone https://github.com/migueldiasbr/node-pong.git
+```
+
+Run the server
+
+```terminal
+node node-pong.js
+```
 
 ## Project Name
 
