@@ -2,11 +2,11 @@
 
 ## Summary
 
-Everytime a developer wants to know if a site/API is up and running, generally a PING is made on a IP and PORT. Sometimes I want to check if my service is up on a determined PORT, or even if my request is going through the firewall/router/switch the way I expect.
+Every time a developer wants to check if a site/API is up and running, usually a PING is made on a IP and PORT. Sometimes I want to check if my service is up on a determined PORT, or even if my request is going through the firewall/router/switch the way I expect.
 
 So I wanted to have a simple project that I'm able to quick use it for testing purposes.
 
-**``This is A simple project that provides API endpoints that answers to HTTP requests.``**
+**``This is a simple project that provides API endpoints that answers to HTTP requests.``**
 
 ## Install
 
@@ -16,7 +16,8 @@ npm install node-pong
 
 ## Use
 
-Create a Node.js file and insert:
+Create a Node.js (e.g. nodePongTest.js) file and insert:
+
 ```nodejs
 let nodePong = require('node-pong');
 ```
@@ -33,7 +34,7 @@ echo "let nodePong = require('node-pong');">nodePongTest.js
 node nodePongTest.js
 ```
 
-and you whould see the server running:
+and you should see the server running:
 
 ```bash
 server running on port 13420
