@@ -1,0 +1,5 @@
+{
+    "_comment": "##########################\n\nThis is the configuration file for node-pong.\n\nports: array of ports for node-pong listen to. If no port is informed, or no node-pong.json file is found, it will listen on the default port 13420.\n\nserverMessage: should be a message that is shown on the console when the server is listening on the desired port, on the form of:\n\nserverMessage: port\n\n##########################\n",
+    "ports": ["13420", "4500", "4600-4602", "4800-a", "27789   ", "2124s", "13000-12998", "  "],
+    "serverMessage": "The server is running on port: "
+}
