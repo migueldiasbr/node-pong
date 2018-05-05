@@ -11,7 +11,14 @@
         "url": "git+https://github.com/migueldiasbr/node-pong.git"
     },
     "keywords": [
-        "nodejs"
+        "nodejs",
+        "http",
+        "ping",
+        "pong",
+        "api",
+        "request",
+        "response",
+        "endpoint"
     ],
     "author": "Miguel Dias <migueldiasbr@gmail.com>",
     "license": "MIT",

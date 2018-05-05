@@ -93,6 +93,7 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 - <s>Respond to ping requests on a default port;</s>
 - <s>Respond with a default answer "PONG";</s>
 - <s>Fewer dependencies as possible or no dependencies at all</s>
+- Implement in-memory list of ports, with or without file persistence, for dynamic project configuration;
 - <s>OPTIONAL: respond to ping requests on several ports;</s>
 - OPTIONAL: respond with a customized answer on the default port;
 - OPTIONAL: respond with a customized answer on several different ports;
@@ -104,6 +105,11 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 - Implement a continuous delivery process;
 
 ## Versions
+
+### 1.1.1
+
+- Goals updated - added dynamic port configuration wish;
+- Added more keywords for the package;
 
 ### 1.1.0
 
