@@ -14,13 +14,17 @@
 let http = require('http');
 let fs = require('fs');
 let defaultPort = 13420;
+/*load configFile from app dir, using normalize for windows/linux/mac path correction */
+let configFile = require('path').normalize(process.cwd() + '/' + 'node-pong.json');
+
 
 /**
  * If there is a node-pong.json file, we will run the server with it's configurations
  * if it does not exists, run with default port 13420
  */
-if (fs.existsSync('./node-pong.json')) { //run with config file details
-    const config = require('./node-pong.json');
+if (fs.existsSync(configFile)) { //run with config file details
+    const config = require(configFile);
+    console.log(configFile);
     const ports = config.ports;
     const serverMessage = config.serverMessage;
     let startedServers = 0;

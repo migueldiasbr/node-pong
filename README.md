@@ -60,7 +60,13 @@ pong
 
 ## Configuration file
 
-On version 1.1.0 a configuration file was added. You can copy it from the ``node_modules/node-pong`` directory, or create it manually:
+On version 1.1.0 a configuration file was added. You can copy it from the ``node_modules/node-pong`` directory:
+
+```bash
+cp node_modules/node-pong/node-pong.json .
+```
+
+or create it manually:
 
 ### node-pong.json
 
@@ -108,6 +114,7 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 
 ### 1.1.1
 
+- Fixed loading ``node-pong.json`` from current dir(``./``), now using ``process.cwd()``;
 - Goals updated - added dynamic port configuration wish;
 - Added more keywords for the package;
 
