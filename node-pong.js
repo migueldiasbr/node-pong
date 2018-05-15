@@ -103,8 +103,10 @@ function processServer(req, res) {
     let parameters = urlMod.parse(req.url, true).query;
     let host = req.headers.host;
     let accept = req.headers.accept;
+    if (typeof accept === 'undefined')
+        accept = 'text/plain';
     if (req.url.indexOf('/ping') > -1) {
-        console.log(parameters);
+        //console.log(parameters);
         res.setHeader('Accept-Charset', 'utf-8');
         res.setHeader('endpoint', '/ping');
         //Check the type of response the client needs        
