@@ -1,6 +1,6 @@
 {
     "name": "node-pong",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "A simple project that provides API endpoints that answers to HTTP requests.",
     "main": "node-pong.js",
     "scripts": {
