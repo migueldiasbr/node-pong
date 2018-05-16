@@ -1,6 +1,6 @@
 {
     "name": "node-pong",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Provides an automated answer on ``/ping`` endpoint. Works on multiple ports.",
     "main": "node-pong.js",
     "scripts": {
@@ -21,7 +21,9 @@
         "endpoint"
     ],
     "author": "Miguel Dias <migueldiasbr@gmail.com>",
-    "contributors": ["Miguel Dias <migueldiasbr@gmail.com> (http://migueldiasbr.blog/projects/node-pong.html)"],
+    "contributors": [
+        "Miguel Dias <migueldiasbr@gmail.com> (http://migueldiasbr.blog/projects/node-pong.html)"
+    ],
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/migueldiasbr/node-pong/issues"
