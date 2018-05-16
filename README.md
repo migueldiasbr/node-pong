@@ -204,7 +204,15 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 - Create tests using Mocha or another framework;
 - Implement a continuous delivery process;
 
-## Versions
+## Release notes
+
+### 1.2.5
+
+- Added a simple Mocha test for testing ``/ping`` on the default port. Test every response type (plain, json, html and xml);
+- Also test the ``/ports`` endpoint;
+- fixed a bug when no header for "Accept" was defined, the request crashed the server;
+- Added close() function to close server;
+- jumped to this version number because of my npm not publishing correctly. Ignore versions 1.2.1 through 1.2.4.
 
 ### 1.2.0
 

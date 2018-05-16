@@ -1,10 +1,10 @@
 {
     "name": "node-pong",
     "version": "1.2.4",
-    "description": "A simple project that provides API endpoints that answers to HTTP requests.",
+    "description": "Provides an automated answer on ``/ping`` endpoint. Works on multiple ports.",
     "main": "node-pong.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha"
     },
     "repository": {
         "type": "git",
@@ -21,9 +21,14 @@
         "endpoint"
     ],
     "author": "Miguel Dias <migueldiasbr@gmail.com>",
+    "contributors": ["Miguel Dias <migueldiasbr@gmail.com> (http://migueldiasbr.blog/projects/node-pong.html)"],
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/migueldiasbr/node-pong/issues"
     },
-    "homepage": "https://github.com/migueldiasbr/node-pong#readme"
+    "homepage": "https://github.com/migueldiasbr/node-pong#readme",
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "mocha": "^5.1.1"
+    }
 }

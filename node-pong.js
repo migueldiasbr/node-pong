@@ -150,6 +150,17 @@ function createServer(serverMessage, port) {
 }
 
 /**
+ * Closes every single HTTP server created.
+ * 
+ * @param {any} done 
+ */
+function close(done) {
+    httpServers.forEach(server => {
+        server.close(done);
+    });
+}
+
+/**
  * Check if N it is a number
  * Solution got on: https://stackoverflow.com/questions/1303646/check-whether-variable-is-number-or-string-in-javascript
  * 
@@ -158,3 +169,5 @@ function createServer(serverMessage, port) {
 function isNumber(n) {
     return /^-?[\d.]+(?:e-?\d+)?$/.test(n);
 }
+
+module.exports.close = close;
