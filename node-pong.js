@@ -30,8 +30,9 @@ if (fs.existsSync(configFile)) { //run with config file details
     const ports = config.ports;
     const serverMessage = config.serverMessage;
     let startedServers = 0;
-    if (config._comment.trim().length > 0)
+    if (config._comment.trim().length > 0) {
         console.log(config._comment);
+    }
     for (const key in ports) {
         if (ports[key].indexOf('-') > 0) { //check for range like: 10000-10030
             let portsArray = ports[key].split('-');

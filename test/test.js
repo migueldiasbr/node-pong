@@ -1,7 +1,34 @@
 let assert = require('assert');
 let http = require('http');
 let nodePong = undefined;
+let fs = require('fs');
 
+
+function rename(fromFile, toFile) {
+
+    fs.rename(fromFile, toFile, function(err) {
+        if (err) console.log('ERROR: ' + err);
+    });
+}
+
+describe('Config file test', function() {
+    let configFile = './node-pong.json';
+    it('Renaming file', function() {
+        if (fs.existsSync(configFile)) { //run with config file details
+            rename('./node-pong.json', './node-pong-testing.json');
+            describe('/ping', function() {
+
+            });
+        }
+        if (fs.existsSync('./node-pong-testing.json')) { //run with config file details
+            rename('./node-pong-testing.json', './node-pong.json');
+            describe('/ping', function() {
+
+            });
+        }
+
+    });
+});
 
 describe('Endpoints tests', function() {
     describe('/ping', function() {
@@ -111,6 +138,13 @@ beforeEach(function() {
 
 
 after(function() {
+    if (fs.existsSync('./node-pong-testing.json')) { //run with config file details
+        rename('./node-pong-testing.json', './node-pong.json');
+        describe('/ping', function() {
+
+        });
+    }
+
     //console.log('after');
     nodePong.close()
     console.log('Server closed...');

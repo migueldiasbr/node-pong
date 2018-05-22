@@ -2,6 +2,8 @@
 
 ![node-pong](./node-pong.png)
 
+[![NPM](https://nodei.co/npm/node-pong.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/node-pong/)
+
 ## Summary
 
 Every time a developer wants to check if a site/API is up and running, usually a PING is made on a IP and PORT. Sometimes I want to check if my service is up on a determined PORT, or even if my request is going through the firewall/router/switch the way I expect.
@@ -45,7 +47,6 @@ and you should see the server running:
 ```bash
 server running on port 13420
 ```
-
 
 ## Main endpoint
 
@@ -174,7 +175,7 @@ or create it manually:
 - ``_comment``: The message you want to show on the console;
 - ``ports``: An array of ports that the server must listen to.
   - You can specify one by one or a range of ports;
-  - Range will not check if the ``startPort`` is bigger than the ``endPort``, so you must supply the range in the correct order. E.g.: 
+  - Range will not check if the ``startPort`` is bigger than the ``endPort``, so you must supply the range in the correct order. E.g.:
     - **correct: 10-20**;
     - <s>**wrong: 20-10**;</s>
   - NaN will just throw a "``-> not a valid port``" message on the console, but will not throw any error or interrupt other listening ports;
@@ -205,6 +206,10 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 - Implement a continuous delivery process;
 
 ## Release notes
+
+### 1.2.6
+
+- Added eslint rules;
 
 ### 1.2.5
 
