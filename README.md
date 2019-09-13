@@ -204,6 +204,7 @@ Provide a simple API able to answer to HTTP requests, enabling our project to:
 - Implement every OPTIONAL goal described above;
 - Create tests using Mocha or another framework;
 - Implement a continuous delivery process;
+- Add dynamic port configuration via process.env or process.argv;
 
 ## Release notes
 
